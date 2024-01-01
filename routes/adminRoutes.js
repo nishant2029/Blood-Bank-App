@@ -5,7 +5,7 @@ const {
   getHospitalsListController,
   getOrganisationsListController,
   deleteDonarController,
-} = require("../controllers/AdminController");
+} = require("../controllers/adminController");
 const adminMiddleware = require("../middlewares/adminMiddleware");
 
 //router object
