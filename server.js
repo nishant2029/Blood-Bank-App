@@ -25,6 +25,9 @@ app.use(morgan('dev'));
 
 //routes
 // 1 test route
+app.use("/",(req,res)=>{
+    res.status(200).json("Backend is running properly");
+});
 app.use("/api/v1/test",require("./routes/testRoute"));
 app.use("/api/v1/auth", require("./routes/authRoutes"));
 app.use("/api/v1/inventory",require("./routes/inventoryRoutes"));
